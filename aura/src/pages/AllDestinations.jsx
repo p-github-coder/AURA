@@ -23,13 +23,13 @@ import lisbon from '../assets/libson.jpg';
 import porto from '../assets/porto.jpg';
 import algarve from '../assets/algarve.jpg';
 import madeira from '../assets/madeira.jpg';
-import dubrovnik from '../assets/dubrovnik.jpg';
-import split from '../assets/split.jpg';
-import hvar from '../assets/hvar.jpg';
-import zagreb from '../assets/zagreb.jpg';
+import dubrovnik from '../assets/Dubrovnik.jpg';
+import split from '../assets/Split.jpg';
+import hvar from '../assets/Hvar.jpg';
+import zagreb from '../assets/Zagreb.jpg';
 
 // ===== Americas =====
-import newYork from '../assets/New York.jpg';
+import newYork from '../assets/new york.jpg';
 import losAngeles from '../assets/Los Angeles.jpg';
 import miami from '../assets/Miami.jpg';
 import grandCanyon from '../assets/Grand Canyon.jpg';

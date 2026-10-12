@@ -33,10 +33,10 @@ import algarve from '../../assets/algarve.jpg';
 import madeira from '../../assets/madeira.jpg';
 
 // ==================== CROATIA ====================
-import dubrovnik from '../../assets/dubrovnik.jpg';
-import split from '../../assets/split.jpg';
-import hvar from '../../assets/hvar.jpg';
-import zagreb from '../../assets/zagreb.jpg';
+import dubrovnik from '../../assets/Dubrovnik.jpg';
+import split from '../../assets/Split.jpg';
+import hvar from '../../assets/Hvar.jpg';
+import zagreb from '../../assets/Zagreb.jpg';
 
 
 function Europe() {

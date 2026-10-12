@@ -5,37 +5,37 @@ import '../../css/regions.css';
 // United States
 import newYork from '../../assets/New York2.jpg';
 import losAngeles from '../../assets/Los Angeles.jpg';
-import miami from '../../assets/miami.jpg';
+import miami from '../../assets/Miami.jpg';
 import grandCanyon from '../../assets/Grand Canyon.jpg';
 
 // Mexico
 import cancun from '../../assets/Cancun.jpg';
 import mexicoCity from '../../assets/Mexico City.jpg';
-import tulum from '../../assets/tulum.jpg';
-import guadalajara from '../../assets/guadalajara.jpg';
+import tulum from '../../assets/Tulum.jpg';
+import guadalajara from '../../assets/Guadalajara.jpg';
 
 // Brazil
 import rioDeJaneiro from '../../assets/Rio de Janeiro.jpg';
 import saoPaulo from '../../assets/Sao Paulo.jpg';
-import salvador from '../../assets/salvador.jpg';
+import salvador from '../../assets/Salvador.jpg';
 import fernandoDeNoronha from '../../assets/Fernando de Noronha.jpg';
 
 // Canada
-import banff from '../../assets/banff.jpg';
-import vancouver from '../../assets/vancouver.jpg';
-import toronto from '../../assets/toronto.jpg';
+import banff from '../../assets/Banff.jpg';
+import vancouver from '../../assets/Vancouver.jpg';
+import toronto from '../../assets/Toronto.jpg';
 import quebecCity from '../../assets/Quebec City.jpg';
 
 // Peru
 import machuPicchu from '../../assets/Machu Picchu.jpg';
-import cusco from '../../assets/cusco.jpg';
-import lima from '../../assets/lima.jpg';
+import cusco from '../../assets/Cusco.jpg';
+import lima from '../../assets/Lima.jpg';
 import sacredValley from '../../assets/Sacred Valley.jpg';
 
 // Argentina
 import buenosAires from '../../assets/Buenos Aires.jpg';
-import patagonia from '../../assets/patagonia.jpg';
-import mendoza from '../../assets/mendoza.jpg';
+import patagonia from '../../assets/Patagonia.jpg';
+import mendoza from '../../assets/Mendoza.jpg';
 import iguazuFalls from '../../assets/Iguazu Falls.jpg';
 
 function Americas() {

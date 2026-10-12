@@ -2,10 +2,10 @@
 
 // ===== Santorini Images =====
 import santoriniHero from '../assets/santorini.jpg';
-import redBeach from '../assets/Red Beach.jpg';
-import perissaBeach from '../assets/Perissa Beach.jpg';
-import kamariBeach from '../assets/Kamari Beach.jpg';
-import vlychadaBeach from '../assets/Vlychada Beach.jpg';
+import redBeach from '../assets/red beach.jpg';
+import perissaBeach from '../assets/perissa beach.jpg';
+import kamariBeach from '../assets/kamari beach.jpg';
+import vlychadaBeach from '../assets/Vlychada beach.jpg';
 import santoriniCaldera from '../assets/Santorini Caldera.jpg';
 import neaKameni from '../assets/Nea Kameni Volcano.jpg';
 import therasiaIsland from '../assets/Therasia Island.jpg';
@@ -57,7 +57,7 @@ import santaMarina from '../assets/Santa Marina, a Luxury Collection Resort.jpg'
 // ===== Athens Images =====
 import athensHero from '../assets/athens.jpg'; // use your existing athens.jpg as hero
 import vouliagmeniBeach from '../assets/Vouliagmeni Beach.jpg';
-import astirBeach from '../assets/Astir Beach.jpg';
+import astirBeach from '../assets/Astir beach.jpg';
 import edemBeach from '../assets/Edem Beach.jpg';
 import kavouriBeach from '../assets/Kavouri Beach.jpg';
 import mountLycabettus from '../assets/Mount Lycabettus.jpg';
