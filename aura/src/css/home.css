@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  background-image: url("../assets/netherland2.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+}
+
+.page {
+  display: flex;            
+  flex-direction: column;     
+  padding-top: 150px;
+  padding-left: 80px;
+  align-items: flex-start;
+}
+
+.page h1 {
+  color: #ffffff;
+  font-size: 60px;
+  line-height: 1.05;
+  text-align: left;
+}
+
+.page p {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: left;
+  margin-top: -20px;
+  max-width: 550px;
+  
+}
+
+.button {
+  background-color: #E87A5D;
+  color: #FFFFFF;
+  border: 1px solid #E87A5D;
+  font-size: 14px;
+  padding: 10px 20px;
+  margin-top: 25px;
+  margin-bottom: 60px;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+/* ========== RESPONSIVE ========== */
+
+/* Laptop */
+@media (max-width: 1200px) {
+  .page {
+    padding-top: 130px;
+    padding-left: 60px;
+    padding-right: 40px;
+  }
+  .page h1 {
+    font-size: 52px;
+  }
+}
+
+/* Tablet landscape */
+@media (max-width: 1024px) {
+  .hero {
+    min-height: 70vh;
+  }
+  .page {
+    padding-top: 110px;
+    padding-left: 40px;
+    padding-right: 32px;
+  }
+  .page h1 {
+    font-size: 44px;
+  }
+  .page p {
+    font-size: 16px;
+    max-width: 480px;
+    margin-top: -10px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+  }
+  .page {
+    padding-top: 80px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+  }
+  .page h1 {
+    font-size: 36px;
+    line-height: 1.15;
+  }
+  .page p {
+    font-size: 15px;
+    max-width: 100%;
+    margin-top: 8px;
+  }
+  .button {
+    margin-bottom: 40px;
+  }
+}
+
+/* Large phone */
+@media (max-width: 600px) {
+  .hero {
+    min-height: 55vh;
+  }
+  .page {
+    padding-top: 72px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .page h1 {
+    font-size: 32px;
+  }
+  .page p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+  .hero {
+    min-height: 50vh;
+    background-position: center;
+  }
+  .page {
+    padding-top: 56px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .page h1 {
+    font-size: 28px;
+  }
+  .page p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .button {
+    width: 100%;
+    max-width: 280px;
+    padding: 12px 20px;
+    margin-top: 20px;
+    margin-bottom: 32px;
+  }
+}
+
+/* Small phone */
+@media (max-width: 375px) {
+  .page h1 {
+    font-size: 24px;
+  }
+  .page p {
+    font-size: 13px;
+  }
+}
+
+/* Short landscape phones */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    min-height: auto;
+  }
+  .page {
+    padding-top: 40px;
+    padding-bottom: 24px;
+  }
+  .page h1 {
+    font-size: 28px;
+  }
+  .button {
+    margin-bottom: 24px;
+  }
+}

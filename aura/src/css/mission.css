@@ -1,0 +1,136 @@
+/* About page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mission {
+  background: #0f2744;
+  padding: 45px 24px;
+  position: relative;
+  overflow: hidden;
+}
+.mission-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.mission-content {
+  max-width: 520px;
+  color: white;
+  text-align: left;
+  padding-left: 50px;
+}
+.mission-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0 0 14px;
+}
+.mission-content p {
+  font-size: 16px;
+  opacity: 0.85;
+  margin: 0 0 28px;
+}
+.mission-btn {
+  background: #e07a5f;
+  color: white;
+  border: none;
+  padding: 13px 28px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.mission-btn:hover {
+  background: #c96a52;
+}
+
+/* ========== RESPONSIVE ========== */
+
+/* Laptop */
+@media (max-width: 1200px) {
+  .mission {
+    padding: 40px 24px;
+  }
+  .mission-content {
+    padding-left: 32px;
+  }
+  .mission-content h2 {
+    font-size: 28px;
+  }
+}
+
+/* Tablet landscape */
+@media (max-width: 1024px) {
+  .mission-content {
+    padding-left: 16px;
+    max-width: 560px;
+  }
+  .mission-content h2 {
+    font-size: 26px;
+  }
+  .mission-content p {
+    font-size: 15px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .mission {
+    padding: 40px 24px;
+  }
+  .mission-content {
+    padding-left: 0;
+    max-width: 100%;
+  }
+  .mission-content h2 {
+    font-size: 24px;
+  }
+  .mission-content p {
+    margin-bottom: 22px;
+  }
+}
+
+/* Large phone */
+@media (max-width: 600px) {
+  .mission {
+    padding: 36px 20px;
+  }
+  .mission-content h2 {
+    font-size: 22px;
+  }
+  .mission-content p {
+    font-size: 14px;
+  }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+  .mission {
+    padding: 32px 16px;
+  }
+  .mission-content h2 {
+    font-size: 20px;
+    line-height: 1.35;
+  }
+  .mission-content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .mission-btn {
+    width: 100%;
+    max-width: 260px;
+    padding: 12px 20px;
+  }
+}
+
+/* Small phone */
+@media (max-width: 375px) {
+  .mission-content h2 {
+    font-size: 18px;
+  }
+  .mission-content p {
+    font-size: 13px;
+  }
+}

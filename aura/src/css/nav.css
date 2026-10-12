@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navigation-class {
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 50px;
+    height: 65px;
+    background-color: #ffffff;
+    align-items:center ;
+}
+.aura h1{
+    font-size: 40px;
+    color: #0B3C5D;
+}
+.list{
+    display: flex;
+    gap: 35px;
+}
+a{
+    text-decoration: none;
+    color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+a:hover {
+    color: #0B3C5D;
+    text-decoration: underline;
+    font-weight: 700;
+}
+ul{
+    list-style: none;
+}
+.nav_button{
+    background-color: #E87A5D;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+.nav_button:hover {
+    cursor: pointer;
+}
+/* Active link style */
+.list a.active {
+  color: #0B3C5D;
+  font-weight: 700;
+  text-decoration: underline;
+}
+/* ========== RESPONSIVE ========== */
+
+/* Laptop */
+@media (max-width: 1200px) {
+  .navigation-class {
+    padding: 1px 32px;
+  }
+  .list {
+    gap: 24px;
+  }
+  .aura h1 {
+    font-size: 34px;
+  }
+}
+
+/* Tablet landscape */
+@media (max-width: 1024px) {
+  .navigation-class {
+    padding: 1px 24px;
+  }
+  .list {
+    gap: 18px;
+  }
+  .aura h1 {
+    font-size: 30px;
+  }
+  .list a {
+    font-size: 14px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .navigation-class {
+    padding: 10px 20px;
+    height: auto;
+    min-height: 65px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+  .aura h1 {
+    font-size: 26px;
+  }
+  .list {
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .list a {
+    font-size: 13px;
+  }
+  .nav_button {
+    padding: 8px 16px;
+  }
+}
+
+/* Large phone */
+@media (max-width: 600px) {
+  .navigation-class {
+    padding: 10px 16px;
+  }
+  .list {
+    width: 100%;
+    order: 3;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .aura h1 {
+    font-size: 24px;
+  }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+  .navigation-class {
+    padding: 8px 12px;
+  }
+  .aura h1 {
+    font-size: 22px;
+  }
+  .list {
+    gap: 8px 10px;
+  }
+  .list a {
+    font-size: 12px;
+  }
+  .nav_button {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}
+
+/* Small phone */
+@media (max-width: 375px) {
+  .aura h1 {
+    font-size: 20px;
+  }
+  .list a {
+    font-size: 11px;
+  }
+}

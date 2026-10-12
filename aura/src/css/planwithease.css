@@ -1,0 +1,213 @@
+ /* Home Page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.plan-section {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 45px 6% 55px;
+}
+
+.plan-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+/* LEFT SIDE */
+
+.plan-intro {
+    width: 270px;
+    flex-shrink: 0;
+    text-align: left;
+}
+
+.plan-label {
+    display: block;
+    color: #E87A5D;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.plan-intro h2 {
+    color: #0B3C5D;
+    font-size: 27px;
+    line-height: 1.15;
+    margin-bottom: 12px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.plan-intro p {
+    color: #555555;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.plan-button {
+    background-color: #E87A5D;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 18px;
+    font-size: 13px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.plan-button:hover {
+    background-color: #d9684c;
+}
+
+
+/* RIGHT SIDE */
+
+.plan-features {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+}
+
+.plan-feature {
+    text-align: center;
+}
+
+.feature-icon {
+    width: 74px;
+    height: 74px;
+    margin: 0 auto 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #f8f8f6;
+    border-radius: 50%;
+
+    color: #0B3C5D;
+    
+}
+
+.plan-feature h3 {
+    color: #111111;
+    font-size: 14px;
+    margin-bottom: 9px;
+    font-weight: 700;
+}
+
+.plan-feature p {
+    color: #666666;
+    font-size: 12px;
+    line-height: 1.55;
+}
+
+/* ========== RESPONSIVE ========== */
+
+/* Laptop */
+@media (max-width: 1200px) {
+    .plan-section {
+        padding: 40px 5% 50px;
+    }
+    .plan-container {
+        gap: 40px;
+    }
+    .plan-features {
+        gap: 20px;
+    }
+}
+
+/* Tablet landscape — 4 feature cols + intro no longer fit */
+@media (max-width: 1024px) {
+    .plan-container {
+        gap: 32px;
+    }
+    .plan-intro {
+        width: 220px;
+    }
+    .plan-intro h2 {
+        font-size: 24px;
+    }
+    .plan-features {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px 20px;
+    }
+}
+
+/* Tablet — stack intro above features */
+@media (max-width: 768px) {
+    .plan-section {
+        padding: 36px 24px 44px;
+    }
+    .plan-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 36px;
+    }
+    .plan-intro {
+        width: 100%;
+    }
+    .plan-features {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px 16px;
+    }
+}
+
+/* Large phone */
+@media (max-width: 600px) {
+    .plan-section {
+        padding: 32px 20px 40px;
+    }
+    .plan-intro h2 {
+        font-size: 22px;
+    }
+    .feature-icon {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+    .plan-section {
+        padding: 28px 16px 36px;
+    }
+    .plan-intro h2 {
+        font-size: 20px;
+    }
+    .plan-features {
+        gap: 28px 12px;
+    }
+    .plan-feature h3 {
+        font-size: 13px;
+    }
+    .plan-feature p {
+        font-size: 11px;
+    }
+    .plan-button {
+        width: 100%;
+        max-width: 220px;
+        padding: 12px 16px;
+    }
+}
+
+/* Small phone */
+@media (max-width: 375px) {
+    .plan-features {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    .plan-feature {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,180 @@
+/* discover page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.discover-hero {
+  height: 480px;
+  background-image: url('../assets/balloon.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.discover-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(15, 39, 68, 0.82) 0%,
+    rgba(15, 39, 68, 0.5) 50%,
+    rgba(15, 39, 68, 0.2) 100%
+  );
+  display: flex;
+  align-items: center;
+}
+
+.discover-hero-content {
+  max-width: 1200px;
+  margin-left: 50px;
+  padding: 0 24px;
+  color: white;
+  text-align: left;
+}
+
+.discover-hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0 0 16px;
+}
+
+.discover-hero-content p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 0 0 28px;
+  max-width: 420px;
+  opacity: 0.95;
+}
+
+.discover-hero-btn {
+  background: #e07a5f;
+  color: white;
+  border: none;
+  padding: 13px 28px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.discover-hero-btn:hover {
+  background: #c96a52;
+}
+
+/* ========== RESPONSIVE ========== */
+
+/* Laptop */
+@media (max-width: 1200px) {
+  .discover-hero {
+    height: 440px;
+  }
+  .discover-hero-content {
+    margin-left: 36px;
+  }
+  .discover-hero-content h1 {
+    font-size: 42px;
+  }
+}
+
+/* Tablet landscape */
+@media (max-width: 1024px) {
+  .discover-hero {
+    height: 400px;
+  }
+  .discover-hero-content {
+    margin-left: 28px;
+  }
+  .discover-hero-content h1 {
+    font-size: 36px;
+  }
+  .discover-hero-content p {
+    font-size: 16px;
+    max-width: 400px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .discover-hero {
+    height: 380px;
+  }
+  .discover-hero-content {
+    margin-left: 0;
+    padding: 0 24px;
+  }
+  .discover-hero-content h1 {
+    font-size: 32px;
+  }
+  .discover-hero-content p {
+    font-size: 15px;
+    max-width: 100%;
+    margin-bottom: 22px;
+  }
+}
+
+/* Large phone */
+@media (max-width: 600px) {
+  .discover-hero {
+    height: 360px;
+  }
+  .discover-hero-content {
+    padding: 0 20px;
+  }
+  .discover-hero-content h1 {
+    font-size: 28px;
+  }
+  .discover-hero-content p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+  .discover-hero {
+    height: 340px;
+  }
+  .discover-hero-content {
+    padding: 0 16px;
+  }
+  .discover-hero-content h1 {
+    font-size: 26px;
+  }
+  .discover-hero-btn {
+    width: 100%;
+    max-width: 260px;
+    padding: 12px 20px;
+  }
+}
+
+/* Small phone */
+@media (max-width: 375px) {
+  .discover-hero {
+    height: 320px;
+  }
+  .discover-hero-content h1 {
+    font-size: 22px;
+  }
+  .discover-hero-content p {
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
+}
+
+/* Short landscape phones */
+@media (max-height: 500px) and (orientation: landscape) {
+  .discover-hero {
+    height: auto;
+    min-height: 260px;
+  }
+  .discover-hero-content {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .discover-hero-content h1 {
+    font-size: 24px;
+  }
+}

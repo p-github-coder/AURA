@@ -1,0 +1,396 @@
+/* ======================
+   Destinations Overview Page
+====================== */
+
+.destinations-page {
+  padding: 60px 20px 100px;
+  background-color: #ffffff;
+}
+
+.destinations-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.destinations-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.destinations-header h1 {
+  font-size: 38px;
+  color: #0B3C5D;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.destinations-header p {
+  font-size: 17px;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Continents Grid */
+.continents-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+/* ======================
+   Filter Bar (All Destinations page)
+====================== */
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.filter-btn {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  background: #f5f5f5;
+  color: #0B3C5D;
+}
+
+.filter-btn.active {
+  background: #0B3C5D;
+  color: #fff;
+  border-color: #0B3C5D;
+}
+/* Continent Card */
+.continent-card {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.continent-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* Image */
+.continent-image {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.continent-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.continent-card:hover .continent-image img {
+  transform: scale(1.08);
+}
+
+.continent-overlay {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.country-count {
+  background-color: rgba(11, 60, 93, 0.9);
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+/* Content */
+.continent-content {
+  padding: 24px 22px 28px;
+}
+
+.continent-content h2 {
+  font-size: 24px;
+  color: #0B3C5D;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.continent-content p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+.explore-link {
+  font-size: 15px;
+  font-weight: 600;
+  color: #E87A5D;
+  transition: color 0.2s ease;
+}
+
+.continent-card:hover .explore-link {
+  color: #0B3C5D;
+}
+
+/* ======================
+   Continent / Country Detail Page
+   (e.g. Europe.js — countries + spots grid)
+====================== */
+
+.continent-header {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.back-link {
+  display: inline-block;
+  font-size: 15px;
+  color: #E87A5D;
+  text-decoration: none;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  color: #0B3C5D;
+}
+
+.page-title {
+  font-size: 38px;
+  color: #0B3C5D;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.continent-intro {
+  font-size: 16px;
+  color: #555;
+  margin: 8px auto 0;
+  max-width: 600px;
+}
+
+/* Country Sections */
+.country-block {
+  margin-bottom: 50px;
+}
+
+.country-title {
+  font-size: 26px;
+  color: #0B3C5D;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #eee;
+}
+
+/* Spots Grid */
+.spots-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* Destination Card */
+.destination-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.destination-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+}
+
+.card-image {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.destination-card:hover .card-image img {
+  transform: scale(1.08);
+}
+
+.country-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: rgba(11, 60, 93, 0.9);
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.card-content {
+  padding: 16px 18px 20px;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  color: #0B3C5D;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+}
+
+.star {
+  color: #E8A93D;
+}
+
+.reviews {
+  color: #888;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+/* Bottom Navigation (shared by overview + detail pages) */
+.continent-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid #eee;
+}
+
+.nav-btn {
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.nav-btn.prev {
+  color: #555;
+  background: #f5f5f5;
+}
+
+.nav-btn.prev:hover {
+  background: #eee;
+  color: #0B3C5D;
+}
+
+.nav-btn.next {
+  color: white;
+  background: #E87A5D;
+}
+
+.nav-btn.next:hover {
+  background: #0B3C5D;
+}
+
+/* ======================
+   Responsive
+====================== */
+
+@media (max-width: 1024px) {
+  .continents-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  .spots-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .destinations-page {
+    padding: 40px 16px 80px;
+  }
+
+  .destinations-header h1 {
+    font-size: 32px;
+  }
+
+  .continents-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .continent-image {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .destinations-header h1 {
+    font-size: 28px;
+  }
+
+  .continent-content h2 {
+    font-size: 22px;
+  }
+
+  .page-title {
+    font-size: 28px;
+  }
+
+  .spots-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .filter-bar {
+    gap: 8px;
+  }
+
+  .filter-btn {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+}

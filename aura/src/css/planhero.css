@@ -1,0 +1,352 @@
+/* plan page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.plan-hero {
+  position: relative;
+  min-height: 430px;
+
+  display: flex;
+  align-items: stretch;
+
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto 100%;
+
+  overflow: hidden;
+
+  padding: 0;
+}
+
+
+/* fade is not used on desktop — the white panel is the mask */
+.plan-hero::before {
+  display: none;
+}
+
+
+/* =========================================
+   MAIN CONTAINER  (full-height white panel)
+   ========================================= */
+
+.plan-hero-container {
+  max-width: none;
+  width: max-content;
+  min-height: 430px;
+
+  margin: 0;
+
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+
+  background-color: #ffffff;
+
+  padding: 55px 0 90px 60px;
+}
+
+
+/* =========================================
+   LEFT CONTENT
+   ========================================= */
+
+.plan-hero-content {
+  width: max-content;
+  max-width: none;
+
+  position: relative;
+
+  z-index: 2;
+
+  padding-left: 2px;
+  padding-right: 0;
+}
+
+
+.plan-hero-content h1 {
+  font-size: 42px;
+
+  font-weight: 700;
+
+  color: #0B3C5D;
+
+  line-height: 1.15;
+
+  margin-bottom: 18px;
+
+  text-align: left;
+}
+
+
+.plan-hero-content p {
+  font-size: 16px;
+
+  color: #64748b;
+
+  line-height: 1.6;
+
+  margin-bottom: 32px;
+
+  text-align: left;
+}
+
+
+/* =========================================
+   FEATURES
+   ========================================= */
+
+.plan-features {
+  display: grid;
+
+  grid-template-columns: repeat(4, max-content);
+
+  justify-content: start;
+
+  gap: 20px 28px;
+
+  width: max-content;
+
+  max-width: 100%;
+}
+
+
+.plan-feature {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+
+  gap: 10px;
+
+  max-width: 140px;
+}
+
+
+.feature-icon {
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  background: #f8fafc;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #0B3C5D;
+
+  flex-shrink: 0;
+}
+
+
+.plan-feature h4 {
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #0B3C5D;
+
+  margin-bottom: 3px;
+
+  text-align: center;
+}
+
+
+.plan-feature span {
+  display: block;
+
+  font-size: 12px;
+
+  line-height: 1.4;
+
+  color: #64748b;
+
+  text-align: center;
+}
+html,
+body,
+#root {
+  background-color: #ffffff !important;
+}
+
+/* ========== RESPONSIVE ========== */
+
+/* Laptop */
+@media (max-width: 1200px) {
+  .plan-hero-container {
+    padding: 48px 0 80px 40px;
+  }
+
+  .plan-hero-content h1 {
+    font-size: 38px;
+  }
+
+  .plan-features {
+    gap: 16px 24px;
+  }
+}
+
+/* Tablet landscape — stack: text on top, image underneath */
+@media (max-width: 1024px) {
+  .plan-hero {
+    display: block;
+    background-size: 100% 52%;
+    background-position: center bottom;
+    padding: 0 0 380px;
+    min-height: auto;
+  }
+
+  .plan-hero-container {
+    width: 100%;
+    min-height: auto;
+    padding: 48px 32px 0;
+    background-color: #ffffff;
+  }
+
+  .plan-hero-content {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .plan-hero-content h1 {
+    font-size: 36px;
+  }
+
+  .plan-features {
+    width: 100%;
+    max-width: 520px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 16px;
+  }
+
+  .plan-feature {
+    max-width: none;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .plan-hero {
+    padding: 0 0 340px;
+    background-size: 100% 50%;
+    background-position: center bottom;
+  }
+
+  .plan-hero-container {
+    padding: 40px 24px 0;
+  }
+
+  .plan-hero-content h1 {
+    font-size: 32px;
+  }
+
+  .plan-hero-content p {
+    font-size: 15px;
+    margin-bottom: 28px;
+  }
+
+  .plan-features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 16px;
+    max-width: 100%;
+  }
+}
+
+/* Large phone */
+@media (max-width: 600px) {
+  .plan-hero {
+    padding: 0 0 300px;
+    background-size: 100% 48%;
+    background-position: center bottom;
+  }
+
+  .plan-hero-container {
+    padding: 36px 20px 0;
+  }
+
+  .plan-hero-content h1 {
+    font-size: 30px;
+  }
+
+  .plan-hero-content p {
+    font-size: 15px;
+  }
+
+  .plan-features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 14px;
+  }
+
+  .feature-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+  .plan-hero {
+    padding: 0 0 260px;
+    background-size: 100% 46%;
+  }
+
+  .plan-hero-container {
+    padding: 32px 16px 0;
+  }
+
+  .plan-hero-content h1 {
+    font-size: 26px;
+  }
+
+  .plan-hero-content p {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .plan-feature h4 {
+    font-size: 13px;
+  }
+
+  .plan-feature span {
+    font-size: 11px;
+  }
+}
+
+/* Small phone */
+@media (max-width: 375px) {
+  .plan-hero {
+    padding: 0 0 220px;
+  }
+
+  .plan-hero-content h1 {
+    font-size: 24px;
+  }
+
+  .plan-features {
+    gap: 20px 12px;
+  }
+}
+
+/* Short landscape phones */
+@media (max-height: 500px) and (orientation: landscape) {
+  .plan-hero {
+    padding: 0 0 200px;
+    background-size: 100% 42%;
+  }
+
+  .plan-hero-content h1 {
+    font-size: 26px;
+  }
+}

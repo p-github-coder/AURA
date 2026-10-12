@@ -1,0 +1,189 @@
+/* plan page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.start-planning {
+  margin-top: -80px;          /* pulls the card up to overlap the hero */
+  padding: 0 24px 60px;
+  position: relative;
+  z-index: 10;
+}
+
+.start-planning-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 20px;
+  padding: 32px 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.start-planning-card h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a365d;
+  margin: 0 0 24px;
+}
+
+.planning-form {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.form-group {
+  flex: 1;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: #f8fafc;
+}
+
+.input-wrapper svg {
+  color: #94a3b8;
+  flex-shrink: 0;
+}
+
+.input-wrapper input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  width: 100%;
+  color: #1e293b;
+}
+
+.input-wrapper input::placeholder {
+  color: #94a3b8;
+}
+
+.start-btn {
+  background: #e07a5f;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s;
+  height: 48px;
+}
+
+.start-btn:hover {
+  background: #c96a52;
+}
+
+/* ========== RESPONSIVE ========== */
+
+/* Laptop */
+@media (max-width: 1200px) {
+  .start-planning-card {
+    padding: 28px 32px;
+  }
+  .planning-form {
+    gap: 14px;
+  }
+}
+
+/* Tablet landscape — fields still in a row, slightly tighter */
+@media (max-width: 1024px) {
+  .start-planning {
+    margin-top: -70px;
+    padding: 0 24px 52px;
+  }
+  .start-planning-card {
+    padding: 28px 28px;
+  }
+  .start-planning-card h2 {
+    font-size: 20px;
+  }
+  .start-btn {
+    padding: 14px 22px;
+  }
+}
+
+/* Tablet — stack fields + full-width button */
+@media (max-width: 768px) {
+  .start-planning {
+    margin-top: -60px;
+    padding: 0 20px 48px;
+  }
+  .start-planning-card {
+    padding: 24px 20px;
+    border-radius: 16px;
+  }
+  .planning-form {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+  }
+  .start-btn {
+    width: 100%;
+    height: 48px;
+  }
+}
+
+/* Large phone */
+@media (max-width: 600px) {
+  .start-planning {
+    margin-top: -50px;
+    padding: 0 16px 40px;
+  }
+  .start-planning-card {
+    padding: 22px 16px;
+  }
+  .start-planning-card h2 {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+  .start-planning {
+    margin-top: -40px;
+    padding: 0 16px 36px;
+  }
+  .start-planning-card {
+    padding: 20px 14px;
+    border-radius: 14px;
+  }
+  .start-planning-card h2 {
+    font-size: 17px;
+  }
+  .input-wrapper {
+    padding: 10px 12px;
+  }
+  .input-wrapper input {
+    font-size: 13px;
+    min-width: 0;
+  }
+  .start-btn {
+    font-size: 14px;
+  }
+}
+
+/* Small phone */
+@media (max-width: 375px) {
+  .start-planning-card h2 {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,141 @@
+/* About page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.aura-value {
+  padding: 40px 24px 80px;
+  background: #ffffff;
+}
+.aura-value-container {
+  max-width: 1200px;
+ margin-top: -25px;
+}
+/* Only the label goes left */
+.section-label1 {
+  display: block;
+  color: #e07a5f;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  text-align: left;          /* force left */
+  width: 100%;
+  padding-left: 50px;
+}
+/* Grid stays centered / normal */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+.value-card {
+  text-align: center;
+}
+.value-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: #f0f4f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2c5282;
+}
+.value-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a365d;
+  margin: 0 0 10px;
+}
+.value-card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #718096;
+  margin: 0;
+}
+
+/* ========== RESPONSIVE ========== */
+
+/* Laptop */
+@media (max-width: 1200px) {
+  .aura-value {
+    padding: 36px 24px 64px;
+  }
+  .section-label1 {
+    padding-left: 32px;
+  }
+  .values-grid {
+    gap: 28px 24px;
+  }
+}
+
+/* Tablet landscape — 4 cols get cramped, go 2x2 */
+@media (max-width: 1024px) {
+  .section-label1 {
+    padding-left: 16px;
+  }
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px 24px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .aura-value {
+    padding: 32px 20px 56px;
+  }
+  .aura-value-container {
+    margin-top: 0;
+  }
+  .section-label1 {
+    padding-left: 0;
+    margin-bottom: 24px;
+  }
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 20px;
+  }
+}
+
+/* Large phone */
+@media (max-width: 600px) {
+  .aura-value {
+    padding: 28px 16px 48px;
+  }
+  .value-card h3 {
+    font-size: 15px;
+  }
+  .value-card p {
+    font-size: 13px;
+  }
+}
+
+/* Phone — single column */
+@media (max-width: 480px) {
+  .aura-value {
+    padding: 24px 16px 40px;
+  }
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .value-icon {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+/* Small phone */
+@media (max-width: 375px) {
+  .section-label1 {
+    font-size: 13px;
+  }
+  .value-card h3 {
+    font-size: 14px;
+  }
+}

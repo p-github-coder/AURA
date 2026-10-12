@@ -1,0 +1,65 @@
+/* discover page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.travel-guides {
+  padding: 40px 24px 60px;
+  background: #ffffff;
+}
+
+.travel-guides-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.guides-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  margin-top: 28px;
+}
+
+.guide-card {
+  text-align: center;
+}
+
+.guide-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e3a5f;
+}
+
+.guide-card h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a365d;
+  margin: 0 0 8px;
+}
+
+.guide-card p {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #64748b;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .guides-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .guides-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

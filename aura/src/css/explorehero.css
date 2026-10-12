@@ -1,0 +1,243 @@
+/* explore page */
+.explore-hero {
+  height: 420px;
+  background-image: url("../assets/ocean.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.explore-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(8, 40, 50, 0.82) 0%,
+    rgba(8, 40, 50, 0.55) 55%,
+    rgba(8, 40, 50, 0.25) 100%
+  );
+  display: flex;
+  align-items: center;
+}
+
+.explore-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  color: white;
+  width: 100%;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.explore-hero-content h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0 0 12px;
+  margin-bottom: 20px;
+}
+
+.explore-hero-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 28px;
+  opacity: 0.95;
+}
+
+/* ===== SEARCH BAR ===== */
+.explore-search {
+  display: flex;
+  max-width: 480px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.search-input-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  gap: 10px;
+}
+
+.search-icon {
+  color: #94a3b8;
+  flex-shrink: 0;
+}
+
+.search-input-wrapper input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 15px;
+  padding: 15px 0;
+  color: #1e293b;
+  background: transparent;
+}
+
+.search-input-wrapper input::placeholder {
+  color: #94a3b8;
+}
+
+/* Orange Search button */
+.search-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #e07a5f;
+  color: white;
+  border: none;
+  padding: 0 22px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.search-btn:hover {
+  background: #c96a52;
+}
+
+.search-btn svg {
+  flex-shrink: 0;
+}
+
+/* ========== RESPONSIVE ========== */
+
+/* Laptop */
+@media (max-width: 1200px) {
+  .explore-hero {
+    height: 400px;
+  }
+  .explore-hero-content {
+    margin-left: 36px;
+  }
+  .explore-hero-content h1 {
+    font-size: 38px;
+  }
+}
+
+/* Tablet landscape */
+@media (max-width: 1024px) {
+  .explore-hero {
+    height: 380px;
+  }
+  .explore-hero-content {
+    margin-left: 28px;
+  }
+  .explore-hero-content h1 {
+    font-size: 34px;
+  }
+  .explore-hero-content p {
+    font-size: 15px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .explore-hero {
+    height: 360px;
+  }
+  .explore-hero-content {
+    margin-left: 0;
+    padding: 0 24px;
+  }
+  .explore-hero-content h1 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+  .explore-hero-content p {
+    margin-bottom: 22px;
+  }
+  .explore-search {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+/* Large phone */
+@media (max-width: 600px) {
+  .explore-hero {
+    height: 340px;
+  }
+  .explore-hero-content {
+    padding: 0 20px;
+  }
+  .explore-hero-content h1 {
+    font-size: 26px;
+  }
+  .explore-hero-content p {
+    font-size: 14px;
+    line-height: 1.45;
+    margin-bottom: 18px;
+  }
+  .search-btn {
+    padding: 0 16px;
+    font-size: 14px;
+  }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+  .explore-hero {
+    height: 320px;
+  }
+  .explore-hero-content {
+    padding: 0 16px;
+  }
+  .explore-hero-content h1 {
+    font-size: 24px;
+  }
+  .search-input-wrapper {
+    padding: 0 12px;
+    gap: 8px;
+  }
+  .search-input-wrapper input {
+    font-size: 14px;
+    padding: 14px 0;
+    min-width: 0;
+  }
+  .search-btn {
+    padding: 0 14px;
+    gap: 6px;
+    font-size: 13px;
+  }
+}
+
+/* Small phone */
+@media (max-width: 375px) {
+  .explore-hero {
+    height: 300px;
+  }
+  .explore-hero-content h1 {
+    font-size: 22px;
+  }
+  .explore-hero-content p {
+    font-size: 13px;
+  }
+  .search-btn {
+    padding: 0 12px;
+  }
+}
+
+/* Short landscape phones */
+@media (max-height: 500px) and (orientation: landscape) {
+  .explore-hero {
+    height: auto;
+    min-height: 240px;
+  }
+  .explore-hero-content {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+  .explore-hero-content h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .explore-hero-content p {
+    margin-bottom: 14px;
+  }
+}

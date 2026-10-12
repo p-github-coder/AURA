@@ -1,0 +1,214 @@
+ /* Home Page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.destination {
+  background-color: #FFFFFF;
+  padding: 10px 50px;
+}
+
+.destination_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.destination_header h1 {
+  color: #0B3C5D;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.destination_header a {
+  color: #E87A5D;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.destination_cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.destination_card {
+  background-color: #FFFFFF;
+  width: 100%;
+  min-width: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.card_image {
+  position: relative;
+  width: 100%;
+  height: 220px;
+}
+
+.card_image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.country_tag {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background-color: #0B3C5D;
+  color: #FFFFFF;
+  padding: 2px 18px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card_content {
+  padding: 18px;
+  text-align: left;
+}
+
+.card_content h3 {
+  color: #222222;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.card_content p {
+  color: #222222;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.stars {
+  color: #FFD700;
+  font-size: 17px;
+}
+
+.number {
+  color: #222222;
+  font-weight: 600;
+}
+
+.reviews {
+  color: #777777;
+  font-size: 14px;
+}
+
+/* ========== RESPONSIVE ========== */
+
+/* Laptop — 4 columns get tight, drop to 2x2 */
+@media (max-width: 1200px) {
+  .destination {
+    padding: 10px 36px;
+  }
+  .destination_cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+  .destination_header h1 {
+    font-size: 28px;
+  }
+}
+
+/* Tablet landscape */
+@media (max-width: 1024px) {
+  .destination {
+    padding: 10px 28px;
+  }
+  .destination_cards {
+    gap: 18px;
+  }
+  .card_image {
+    height: 200px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .destination {
+    padding: 20px 20px;
+  }
+  .destination_header h1 {
+    font-size: 24px;
+  }
+  .destination_header a {
+    font-size: 14px;
+  }
+  .destination_cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+  .card_image {
+    height: 180px;
+  }
+  .card_content {
+    padding: 14px;
+  }
+  .card_content h3 {
+    font-size: 18px;
+  }
+}
+
+/* Large phone — single column */
+@media (max-width: 600px) {
+  .destination {
+    padding: 24px 16px;
+  }
+  .destination_header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+  .destination_cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .card_image {
+    height: 220px;
+  }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+  .destination {
+    padding: 20px 12px;
+  }
+  .destination_header h1 {
+    font-size: 22px;
+  }
+  .card_image {
+    height: 200px;
+  }
+  .card_content h3 {
+    font-size: 17px;
+  }
+  .card_content p {
+    font-size: 13px;
+  }
+}
+
+/* Small phone */
+@media (max-width: 375px) {
+  .destination_header h1 {
+    font-size: 20px;
+  }
+  .card_image {
+    height: 180px;
+  }
+}
